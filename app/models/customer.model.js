@@ -69,7 +69,7 @@ Customer.updateById = (id, customer, result) => {
 
             if(res.affectedRows == 0) {
                 // not found customer with the id,
-                result({kind: "Not found"}, null);
+                result({kind: "not_found"}, null);
                 return;
             }
 
