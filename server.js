@@ -7,6 +7,7 @@ app.use(express.json());
 
 //  routes
 require("./app/routes/customer.routes.js")(app);
+require("./app/routes/users.routes.js")(app);
 
 // set port, listen for requests
 app.listen(3000, () =>  {
